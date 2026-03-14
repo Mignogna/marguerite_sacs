@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arima', system-ui;
+    text-decoration: none;
+}
+
+body {
+    background-color: #ece8e4;
+    position: relative;
+    opacity: 1;
+
+}
+
+#about {
+    position: relative;
+    height: 100vh;
+
+}
+
+.logoStore {
+    width: 180px;
+    margin: 2rem;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    z-index: 10;
+    width: 100%;
+    padding: 3rem 5rem 1rem 5rem;
+    background-color: #ece8e4;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav a {
+    color: #04837b;
+    text-decoration: none;
+    margin: 0 25px;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: #e2ae28;
+    transition: 0.3s;
+}
+
+.hero img {
+    width: 90%;
+  height: 90dvh;
+    display: block;
+    margin: 5rem auto 0 auto;
+   
+   
+}
+
+
+.content-about {
+    max-width: 100%;
+    margin: 6rem 2rem 2rem 8rem;
+    align-self: center;
+    padding: 1rem;
+    color: #09827a;
+    font-size: 24px;
+    position: absolute;
+    top: 10%;
+
+}
+
+footer {
+    text-align: center;
+
+   z-index: 100;
+   
+    color: #09827a;
+    width: 100%;
+}
+
+/* --- TABLET (Até 1024px) --- */
+@media (max-width: 1024px) {
+    body {
+        height: auto;
+    }
+
+    .logoStore {
+        width: 140px;
+    }
+
+    nav ul {
+        gap: 1.5rem;
+    }
+
+    nav a {
+        font-size: 16px;
+        margin: 0 10px;
+    }
+
+    .content-about {
+        max-width: 900px;
+        margin: 8rem 2rem 0 8rem;
+        color: #03645d;
+        font-size: 24px;
+        line-height: 3rem;
+    }
+}
+
+/* --- MOBILE (Até 480px) --- */
+@media (max-width: 480px)  {
+    body {
+        height: auto;
+     overflow: hidden;
+    }
+
+    .logoStore {
+        width: 150px;
+        transform: translateY(3rem);
+    }
+
+    header {
+        height: auto;
+        width: 100%;
+        position: fixed;
+        padding: 2rem 1rem 1rem 1rem;
+    }
+
+    nav ul {
+        transform: translateX(-13rem) translateY(-2rem);
+        width: 300px;
+    }
+
+    nav a {
+        font-size: 14px;
+        margin: 0 5px;
+    }
+
+    .content-about {
+        max-width: 450px;
+        margin: -6rem auto 0 auto;
+        font-size: 16px;
+        position: absolute;
+        top: 20%;
+        line-height: normal;
+    }
+
+    .hero img {
+    height: 750px;
+        display: block;
+     margin-top: 8rem;
+
+    }
+
+    footer {
+     
+        font-size: 12px;
+        width: 90%;
+    margin: -1rem auto 1rem auto;
+    }
+}
+
+

@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arima', system-ui;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body {
+    background-color: #ece8e4;
+   max-height: 100%;
+
+}
+#home {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;}
+
+.logoStore {
+    width: 350px;
+    margin: 2rem 5rem 0 4rem;
+}
+
+header {
+    margin: 4rem 6rem 0 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+nav a {
+    color: #04837b;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: #e2ae28;
+    transition: 0.3s;
+}
+
+.content-home {
+    display: flex;
+    flex-direction: row;
+    margin: -5rem 5rem 5rem 5rem;
+  height: 60%;
+
+  }
+
+.content-left {
+    flex: 1;
+}
+
+.txt-home {
+    width: 90%;
+    font-size: 28px;
+    margin-top: 8rem;
+    line-height: 1.5;
+    color: #09827a;
+}
+
+.btn-home {
+    margin-top: 2rem;
+    border: #04837b 2px solid;
+    border-radius: 5px;
+    background-color: #ece9e4;
+    cursor: pointer;
+}
+
+
+.btn-home a {
+    padding: 2px 24px;
+    color: #04837b;
+    font-size: 28px;
+}
+
+.btn-home a:hover {
+    background-color: #04837b;
+    color: #ece8e4;
+    transition: 0.3s;
+}
+
+.content-right {
+    flex: 1;
+    z-index: -10;
+
+}
+
+.img-home {
+    
+    width: 100%;
+   
+  }
+
+footer {
+      text-align: center;
+    color: #04837b;
+    transform: translateY(-1rem);
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+}
+
+footer a {
+    font-weight: 700;
+    color: #04837b;
+}
+
+
+/* --- TABLETS --- */
+@media (max-width: 1024px) {
+    header {
+        margin: 4rem 4rem 0 0;
+    }
+
+    nav ul {
+        gap: 2.5rem;
+    }
+
+    .logoStore {
+        width: 220px;
+        margin: 2rem 4rem 0 4rem;
+
+    }
+
+    .content-home {
+        height: auto;
+        margin: 2rem;
+        text-align: center;
+    }
+
+    .txt-home {
+        width: 550px;
+        font-size: 20px;
+        text-align: left;
+        margin-left: 2.5rem;
+        transform: translateY(9rem);
+    }
+
+    .btn-home {
+        transform: translateY(8rem) translateX(-9rem);
+    }
+
+    .btn-home a {
+        font-size: 20px;
+    }
+
+    .img-home {
+        width: 550px;
+        height: 590px;
+        z-index: -10;
+        transform: translateY(-5rem) translateX(-10rem);
+    }
+
+    footer {
+        transform: none;
+        margin-top: 4rem;
+        padding-bottom: 2rem;
+    }
+}
+
+/* --- MOBILE (Até 480px) --- */
+@media (max-width: 480px) {
+    body {
+        overflow: hidden;
+
+    }
+
+    header {
+        margin: 2rem;
+    }
+
+    nav ul {
+        gap: 1.5rem;
+        width: 90%;
+        margin: 0;
+    }
+
+    .logoStore {
+        width: 180px;
+        margin: 0 0 0 2rem;
+    }
+
+    .content-home {
+        flex-direction: column;
+
+        height: auto;
+        margin: 1rem;
+    }
+
+    .txt-home {
+        font-size: 18px;
+        width: 380px;
+        line-height: 2.5rem;
+        transform: translateX(-2rem) translateY(-7rem);
+    }
+
+    .btn-home {
+        transform: translateX(-5rem) translateY(-8rem);
+        background-color: #ece8e46b;
+
+    }
+
+    .btn-home a {
+        font-size: 18px;
+        display: block;
+    }
+
+    .img-home {
+        width: 400px;
+        margin-top: -16rem;
+        margin-left: 10rem;
+    }
+
+
+    footer {
+        margin: auto;
+        transform: none;
+        padding-bottom: 2rem;
+        transform: translateY(-10rem);
+    }
+}

@@ -1,0 +1,146 @@
+[
+  {
+    "image": "./Assets/Image/Products/bag5.jpg",
+    "name": "Bolsa Sophie",
+    "price": 250.00,
+    "category": "bag"
+  },
+  {
+    "image": "./Assets/Image/Products/necessaire3.jpg",
+    "name": "Necessaire Charlotte",
+    "price": 150.00,
+    "category": "necessaire"
+  },
+  {
+    "image": "./Assets/Image/Products/wallet2.jpg",
+    "name": "Carteira Béatrice",
+    "price": 120.00,
+    "category": "wallet"
+  },
+  {
+    "image": "./Assets/Image/Products/bag1.jpg",
+    "name": "Bolsa Isabelle",
+    "price": 300.00,
+    "category": "bag"
+  },
+  {
+    "image": "./Assets/Image/Products/necessaire2.jpg",
+    "name": "Necessaire Valentine",
+    "price": 180.00,
+    "category": "necessaire"
+  },
+  {
+    "image": "./Assets/Image/Products/wallet1.jpg",
+    "name": "Carteira Françoise",
+    "price": 130.00,
+    "category": "wallet"
+  },
+  {
+    "image": "./Assets/Image/Products/bag3.jpg",
+    "name": "Bolsa Hélène",
+    "price": 270.00,
+    "category": "bag"
+  },
+  {
+    "image": "./Assets/Image/Products/necessaire1.jpg",
+    "name": "Necessaire Adrienne",
+    "price": 160.00,
+    "category": "necessaire"
+  },
+  {
+    "image": "./Assets/Image/Products/wallet3.jpg",
+    "name": "Carteira Elise",
+    "price": 140.00,
+    "category": "wallet"
+  },
+  {
+    "image": "./Assets/Image/Products/bag4.jpg",
+    "name": "Bolsa Louise",
+    "price": 290.00,
+    "category": "bag"
+  },
+  {
+    "image": "./Assets/Image/Products/necessaire4.jpg",
+    "name": "Necessaire Inès",
+    "price": 170.00,
+    "category": "necessaire"
+  },
+  {
+    "image": "./Assets/Image/Products/wallet4.jpg",
+    "name": "Carteira Camille",
+    "price": 150.00,
+    "category": "wallet"
+  },
+  {
+    "image": "./Assets/Image/Products/bag2.jpg",
+    "name": "Bolsa Amélie",
+    "price": 260.00,
+    "category": "bag"
+  },
+  {
+    "image": "./Assets/Image/Products/necessaire5.jpg",
+    "name": "Necessaire Marie",
+    "price": 155.00,
+    "category": "necessaire"
+  },
+  {
+    "image": "./Assets/Image/Products/wallet5.jpg",
+    "name": "Carteira Juliette",
+    "price": 135.00,
+    "category": "wallet"
+  },
+  {
+    "image": "./Assets/Image/Products/bag6.jpg",
+    "name": "Bolsa Chloé",
+    "price": 280.00,
+    "category": "bag"
+  },
+  {
+    "image": "./Assets/Image/Products/necessaire6.jpg",
+    "name": "Necessaire Violette",
+    "price": 165.00,
+    "category": "necessaire"
+  },
+  {
+    "image": "./Assets/Image/Products/wallet6.jpg",
+    "name": "Carteira Margaux",
+    "price": 145.00,
+    "category": "wallet"
+  },
+  {
+    "image": "./Assets/Image/Products/bag7.jpg",
+    "name": "Mochila Dominique",
+    "price": 310.00,
+    "category": "bag"
+  },
+  {
+    "image": "./Assets/Image/Products/necessaire7.jpg",
+    "name": "Necessaire Joséphine",
+    "price": 175.00,
+    "category": "necessaire"
+  },
+  {
+    "image": "./Assets/Image/Products/bag8.jpg",
+    "name": "Bolsa Suzanne",
+    "price": 240.00,
+    "category": "bag"
+  },
+  {
+    "image": "./Assets/Image/Products/necessaire8.jpg",
+    "name": "Necessaire Rose",
+    "price": 185.00,
+    "category": "necessaire"
+  },
+  {
+    "image": "./Assets/Image/Products/wallet8.jpg",
+    "name": "Carteira Jasmin",
+    "price": 155.00,
+    "category": "wallet"
+  },
+  {
+    "image": "./Assets/Image/Products/wallet7.jpg",
+    "name": "Carteira Brigitte",
+    "price": 125.00,
+    "category": "wallet"
+  }
+]
