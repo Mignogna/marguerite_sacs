@@ -112,7 +112,6 @@ footer {
 @media (max-width: 480px) {
     body {
         height: auto;
-        overflow: hidden;
     }
 
     .logoStore {
