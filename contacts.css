@@ -164,7 +164,7 @@ footer {
     align-items: center;
     text-align: center;
     margin-top: 3rem;
-
+    width: 100%;
 }
 
 footer p {
@@ -180,12 +180,18 @@ footer a {
     body {
         height: auto;
     }
-    
+
     .logoStore {
-        width: 140px;
+        width: 150px;
+    }
+
+    header {
+        width: 100%;
+        justify-content: space-between;
     }
 
     nav ul {
+        position: fixed;
         gap: 1.5rem;
     }
 
@@ -226,8 +232,7 @@ footer a {
     }
 
     footer {
-        width: 90%;
-        margin: 8rem auto 0 3rem;
+        margin: 8rem auto 0 auto;
     }
 }
 
@@ -240,7 +245,8 @@ footer a {
 
     .logoStore {
         width: 150px;
-        transform: translateY(5rem) translateX(-1rem);
+         margin: 5rem 1.5rem 1rem 1.5rem;
+        transform: translateY(2rem) ;
 
     }
 
@@ -248,19 +254,19 @@ footer a {
         height: auto;
         width: 100%;
         position: fixed;
-        padding-bottom: 2.5rem;
+        padding: 1rem 0;
     }
 
 
     nav ul {
-        transform: translateX(-3rem) translateY(1rem);
         width: 300px;
-
+        gap: 1.3rem;
     }
 
     nav a {
         font-size: 14px;
-        margin: 0 5px;
+        margin: 0;
+        transform: translateX(2rem);
     }
 
     .content-contacts {

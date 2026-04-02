@@ -76,7 +76,7 @@ function displayCards(products) {
         div.innerHTML = `
             <button class="fav-btn ${isFav ? 'active' : ''}" data-index="${originalIndex}" aria-label="Favoritar">${isFav ? '♥' : '♡'}</button>
             <img class="img-product" src="${item.image}" alt="${item.name}">
-            <h4>${item.name}</h4>
+            <h4 lang="fr" translate="no">${item.name}</h4>
             <p>${formattedPrice}</p>
             <button class="btn-buy" data-index="${originalIndex}">Comprar</button>
         `;
@@ -230,7 +230,7 @@ function renderCartModal() {
         const subtotal = product.price * qty;
         total += subtotal;
         return `<tr data-index="${idx}">
-            <td>${product.name}</td>
+            <td lang="fr" translate="no">${product.name}</td>
             <td style="width:160px; text-align:center;">
                 <button class="qty-btn" data-action="decrease" data-index="${idx}">−</button>
                 <span class="qty" data-index="${idx}" style="display:inline-block; min-width:30px;">${qty}</span>
@@ -428,7 +428,7 @@ function showConfirmation(total, name, address, city) {
     body.innerHTML = `
         <div class="confirm-message">
             <h3><img src="./Assets/Image/daisyIcon.png" alt="Daisy Icon"> Obrigado pela sua compra!</h3>
-            <p>Estamos felizes que você tenha adquirido nossos produtos ${displayName ? ', ' + displayName : ''}.</p>
+            <p>Estamos felizes que você tenha adquirido nossos produtos<strong>${displayName ? ', ' + displayName : ''}</strong>.</p>
             <p>Enviaremos seu pedido para: <strong>${address || ''}${city ? ', ' + city : ''}</strong></p>
             <p class="confirm-total">Total pago: <strong>${formatCurrency(total)}</strong></p>
             <p style="margin-top:1rem;"><strong>Deus abençoe!</strong></p>

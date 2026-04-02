@@ -10,13 +10,16 @@
 
 body {
     background-color: #ece8e4;
-   max-height: 100%;
+    max-height: 100%;
 
 }
+
 #home {
     position: relative;
     height: 100vh;
-    overflow: hidden;}
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
 
 .logoStore {
     width: 350px;
@@ -52,9 +55,9 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     margin: -5rem 5rem 5rem 5rem;
-  height: 60%;
+    height: 60%;
 
-  }
+}
 
 .content-left {
     flex: 1;
@@ -96,13 +99,13 @@ nav a:hover {
 }
 
 .img-home {
-    
+
     width: 100%;
-   
-  }
+
+}
 
 footer {
-      text-align: center;
+    text-align: center;
     color: #04837b;
     transform: translateY(-1rem);
 }
@@ -172,13 +175,10 @@ footer a {
 
 /* --- MOBILE (Até 480px) --- */
 @media (max-width: 480px) {
-    body {
-        overflow: hidden;
-
-    }
+    
 
     header {
-        margin: 2rem;
+        margin:1rem 2rem;
     }
 
     nav ul {
