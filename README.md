@@ -20,4 +20,24 @@ Transformei o protótipo em realidade utilizando ***HTML,CSS e Javascript***, fo
 
 O resultado é um e-commerce funcional onde o design e a tecnologia trabalham juntos para converter visitantes em clientes.
 
-🔗 https://www.figma.com/design/3TpJw2u65X8jgvRTVvx3Bw/Marguerite-Sacs?node-id=0-1&p=f&t=uuCkKg05Lqh2WLTC-0
+🔗 [**Figma Link**](https://www.figma.com/design/3TpJw2u65X8jgvRTVvx3Bw/Marguerite-Sacs?node-id=0-1&p=f&t=uuCkKg05Lqh2WLTC-0)<hr>
+
+
+# **Marguerite Sacs: From Figma to Code 👜✨**
+This project was born from the desire to create a complete e-commerce experience. More than just coding, I immersed myself in the entire product lifecycle:
+
+## **UX/UI Design:**
+Strategic planning in Figma, focusing on intuitive navigation and a minimalist aesthetic that reflects the sophistication of Marguerite bags.
+
+## **UX Solutions:**
+To translate the richness of hand-embroidered details into the virtual environment, I implemented a high-definition zoom system. This solution allows users to explore every detail of the weaves and textures, bridging the gap between the digital shopping experience and the physical touch, while reinforcing the product's perceived value.
+
+## **User Journey:**
+I mapped every stage, from the storefront to the final sale, ensuring a smooth and frictionless checkout flow.
+
+## **Frontend Development:**
+I brought the prototype to life using HTML, CSS, and JavaScript, focusing on performance, responsiveness, and pixel-perfect visual fidelity.
+
+The result is a functional e-commerce platform where design and technology work together to convert visitors into customers.
+
+🔗 [**Figma Link**](https://www.figma.com/design/3TpJw2u65X8jgvRTVvx3Bw/Marguerite-Sacs?node-id=0-1&p=f&t=uuCkKg05Lqh2WLTC-0)
