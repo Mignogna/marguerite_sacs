@@ -231,13 +231,13 @@ function renderCartModal() {
         total += subtotal;
         return `<tr data-index="${idx}">
             <td lang="fr" translate="no">${product.name}</td>
-            <td style="width:160px; text-align:center;">
-                <button class="qty-btn" data-action="decrease" data-index="${idx}">−</button>
-                <span class="qty" data-index="${idx}" style="display:inline-block; min-width:30px;">${qty}</span>
+            <td style="width:125px; text-align:center;">
+                <button class="qty-btn"  data-action="decrease" data-index="${idx}">−</button>
+                <span class="qty" data-index="${idx}" style="display:inline-block; min-width:18px;">${qty}</span>
                 <button class="qty-btn" data-action="increase" data-index="${idx}">+</button>
             </td>
             <td style="width:120px;">${formatCurrency(product.price)}</td>
-            <td style="width:120px; text-align:right;">${formatCurrency(subtotal)}</td>
+            <td style="width:120px; text-align:center">${formatCurrency(subtotal)}</td>
             <td style="width:110px; text-align:right;"><button class="cart-action" data-action="remove" data-index="${idx}">Remover</button></td>
         </tr>`;
     }).join('');

@@ -104,6 +104,9 @@ main {
     transition: transform 0.3s, box-shadow 0.3s;
     color: #04837b;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card-product:hover {
@@ -143,6 +146,8 @@ main {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s;
+
+
 }
 
 .btn-buy:hover {
@@ -367,9 +372,10 @@ main {
 
 .cart-table th,
 .cart-table td {
-    padding: 8px 6px;
-    text-align: left;
-    border-bottom: 1px solid #eee;
+    padding: 8px 6px ;
+    text-align: center;
+    border-bottom: 2px solid #dadfdd;
+  
 }
 
 .cart-total {
@@ -412,14 +418,17 @@ main {
 }
 
 .qty-btn {
-    width: 28px;
-    height: 28px;
+    width: 18px;
+    height: 18px;
     background: #04837b;
     color: #fff;
     border: none;
     border-radius: 50%;
     cursor: pointer;
-    margin: 0 4px;
+    font-weight: 700;
+   display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cart-action {
