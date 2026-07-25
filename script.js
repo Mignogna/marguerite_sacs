@@ -190,6 +190,26 @@ function bindBuyButtons() {
     buyBound = true;
 }
 
+const productsSection = document.getElementById('products');
+const btnSacola = document.getElementById('btn-bag');
+
+if (productsSection && btnSacola) {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                btnSacola.classList.remove('hidden'); 
+            } else {
+                btnSacola.classList.add('hidden');  
+            }
+        });
+    }, { 
+        threshold: 0, 
+        rootMargin: "0px 0px -50px 0px",
+    });
+
+    observer.observe(productsSection);
+}
+
 function openCartModal() {
     const modal = document.getElementById('cart-modal');
     if (!modal) return;

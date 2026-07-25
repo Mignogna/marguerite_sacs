@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
         rel="stylesheet">
@@ -20,35 +21,184 @@
 </head>
 
 <body>
-    <section id="home">
-        <header>
+    <header>
+        <div><a href="#home"><img class="logoHeader" src="./Assets/Image/logoStore.png" alt="Logo Store" /></a>
+        </div>
+        <div>
             <nav>
                 <ul>
-                    <li><a href="home">Home</a></li>
-                    <li><a href="./products.html">Produtos</a></li>
-                    <li><a href="./about.html">Sobre</a></li>
-                    <li><a href="./contacts.html">Contatos</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Produtos</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#contacts">Contatos</a></li>
+                    <li><a href="#"><i class="bi bi-person-circle"></i></a></li>
+                    <li><a href="#" class="cart-link"><i class="bi bi-bag"></i>
+                            <span id="cart-badge" class="cart-badge pulse">0</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
-        </header>
-        <img class="logoStore" src="./Assets/Image/logoStore.png" alt="Logo Store" />
-        <main class="content-home">
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="home-container">
             <div class="content-left">
+                <img class="logoStore" src="./Assets/Image/logoStore.png" alt="Logo Store" />
                 <p class="txt-home">Nossas bolsas são cuidadosamente confeccionadas por um grupo de freiras artesãs de
-                   <span lang="fr">Saint-Vallier</span>, um vilarejo no interior da França. Elas transformam panos simples em verdadeiras
+                    <span lang="fr">Saint-Vallier</span>, um vilarejo no interior da França. Elas transformam panos
+                    simples em verdadeiras
                     obras de artes tecidas à mão.<br>
-                    Mais que bolsas, um carinho a cada fio.</p>
-                <button class="btn-home"><a href="./products.html">Conhecer a coleção</a></button>
+                    Mais que bolsas, um carinho a cada fio.
+                </p>
+                <a href="./products.html" class="btn-home">Conhecer a coleção</a>
             </div>
-            <div class="content-right"><img class="img-home" src="./Assets/Image/imgHome.png" alt="Foto Ilustrativa da Mulher com a bolsa "></div>
-        </main>
-        <footer>
-            <p><i class="bi bi-c-circle"></i>2026 Projeto de Estudo - Desenvolvido por <a
-                    href="https://linkedin.com/in/helenamignogna/" target="_blank">Helena Mignogna</a></p>
-            <p>"Este é um projeto fictício e acadêmico sem fins comerciais. Nenhuma transação real será realizada."
-            </p>
-        </footer>
+            <div class="content-right"><img class="img-home" src="./Assets/Image/imgHome.png"
+                    alt="Foto Ilustrativa da Mulher com a bolsa "></div>
+        </div>
     </section>
+
+    <section id="products">
+        <div class="products-container">
+            <h2 class="title-products">Nossos Produtos</h2>
+            <div class="filter-products">
+                <button class="filter-btn" onclick="filterByCategory('all')">Todos</button>
+                <button class="filter-btn" onclick="filterByCategory('bag')">Bolsas</button>
+                <button class="filter-btn" onclick="filterByCategory('necessaire')"><span translate="no"
+                        lang="fr">Necessaire</span></button>
+                <button class="filter-btn" onclick="filterByCategory('wallet')">Carteiras</button>
+            </div>
+            <div id="cards-products"></div>
+            <button class="btn-bag hidden" id="btn-bag"><img src="./Assets/Image/daisyIcon.png" alt="Daisy Icon">
+                Conferir a sacola</button>
+        </div>
+        <!-- Cart modal -->
+        <div id="cart-modal" class="cart-modal">
+            <div class="cart-modal-content">
+                <button class="close-cart" id="close-cart">×</button>
+                <h3><img src="./Assets/Image/daisyIcon.png" alt="Daisy Icon"> Sua Sacola (Simulação)</h3>
+                <div id="cart-modal-body"></div>
+            </div>
+        </div>
+        <!-- Checkout / address modal -->
+        <div id="checkout-modal" class="cart-modal">
+            <div class="cart-modal-content">
+                <button class="close-cart" id="close-checkout">×</button>
+                <div id="checkout-modal-body"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="hero"><img src="./Assets/Image/aboultImage.png" alt="Convent View"></div>
+        <div class="content-about">
+            <h2>Sobre Nós</h2>
+            <p>Tudo começou em 2018 quando as freiras beneditinas da cidade de <span lang="fr">Saint-Vallier</span>,
+                um
+                vilarejo da França,
+                precisaram arrecadar fundos para a restaurar e preservar seu secular convento, a partir daí, decidiram
+                confeccionar bolsas com o que elas tinham de melhor, a arte do bordado, e começaram a comercializar em
+                mercados locais nas proximidades do convento.<br>
+            O que elas não esperavam era que a qualidade excepcional de cada peça atrairia pessoas de diversos
+                vilarejos, que viajavam em busca de um produto feito com tanta dedicação.<br>
+            Hoje, seus produtos cruzaram froteiras através do e-commerce e sustenta vários projetos sociais na
+                região.<br>
+            Ao adquirir nossos produtos<span lang="fr"> Marguerite Sacs</span>, você leva consigo a tradição de um
+                trabalho feito à mão e
+                apoia diretamente a continuidade da nossa missão.
+            <p>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <div class="contacts-container">
+            <div class="contacts-title">Como podemos ajudar?</div>
+            <p>Encontre aqui informações sobre nosso processo artesanal, envios e a missão do convento.</p>
+            <dl class="questions">
+                <div class="questions-items">Sobre as Bolsas e Produção<i class="bi bi-chevron-up"></i></div>
+                <dt>1. As bolsas são realmente feitas à mão?<i class="bi bi-chevron-up "></i></dt>
+                <dd>R: Sim. Cada peça da Marguerite Sacs é confeccionada individualmente pelas irmãs beneditinas em
+                    Saint-Vallier. O processo une técnicas tradicionais de bordado e montagem artesanal, o que torna
+                    cada
+                    bolsa única.</dd>
+                <dt>2. Qual o prazo de entrega, já que o produto é artesanal?<i class="bi bi-chevron-up"></i></dt>
+                <dd>R: Como respeitamos o tempo do trabalho manual, nosso estoque é limitado. Se o produto estiver
+                    disponível, o envio é feito em até 3 dias úteis. Para itens sob encomenda, o prazo de confecção é
+                    informado na página do produto.</dd>
+                <dt>3. Quais materiais são utilizados nas peças?<i class="bi bi-chevron-up"></i></dt>
+                <dd>R: Utilizamos tecidos de alta qualidade e fios selecionados que garantem durabilidade. Buscamos
+                    sempre materiais que respeitem a natureza e a simplicidade, alinhados aos valores do nosso convento.
+                </dd>
+            </dl>
+
+            <dl>
+                <div class="questions-items">Pagamento e Segurança<i class="bi bi-chevron-up"></i></div>
+                <dt>4. O site é seguro para compras?<i class="bi bi-chevron-up"></i></dt>
+                <dd>R: Este é um projeto fictício para fins acadêmicos. Portanto, não processamos pagamentos reais nem
+                    realizamos vendas no momento.
+                </dd>
+                <dt>5. Quais seriam as formas de pagamento aceitas?<i class="bi bi-chevron-up"></i></dt>
+                <dd>R: Em uma operação real, aceitaríamos exclusivamente os principais cartões de crédito (Visa,
+                    Mastercard,
+                    American Express e outros). Essa escolha garante uma transação internacional segura e imediata tanto
+                    para o cliente quanto para a missão do nosso convento.</dd>
+            </dl>
+
+            <dl>
+                <div class="questions-items"> Propósito e Missão<i class="bi bi-chevron-up"></i></div>
+                <dt>6. Para onde vai o valor das vendas?<i class="bi bi-chevron-up"></i></dt>
+                <dd>R: 100% do lucro é revertido para a restauração do Convento de Saint-Vallier e para o sustento de
+                    projetos sociais voltados à comunidade local na França.</dd>
+                <dt>7. Posso visitar o convento e comprar pessoalmente?<i class="bi bi-chevron-up"></i></dt>
+                <dd>R: Claro! As irmãs recebem visitantes em horários específicos nos mercados locais de Saint-Vallier.
+                    É
+                    uma forma maravilhosa de conhecer a origem de cada bordado.</dd>
+            </dl>
+
+            <dl>
+                <div class="questions-items">Trocas e Devoluções<i class="bi bi-chevron-up"></i></div>
+                <dt>8. Posso trocar minha bolsa se eu não gostar?<i class="bi bi-chevron-up"></i></dt>
+                <dd>R: Sim, aceitamos devoluções em até 7 dias após o recebimento. Por ser um trabalho de caridade e
+                    artesanal, pedimos que a peça seja devolvida em perfeito estado e na embalagem original.</dd>
+                <dt>9. Como faço para cuidar da minha Marguerite Sacs?<i class="bi bi-chevron-up"></i></dt>
+                <dd>R: Por conter bordados manuais delicados, recomendamos a limpeza apenas com um pano levemente úmido.
+                    Evite lavagem em máquinas ou exposição prolongada ao sol para preservar as cores dos fios.</dd>
+                <dt>10. Vocês fazem personalizações exclusivas?<i class="bi bi-chevron-up"></i></dt>
+                <dd>R: Atualmente, trabalhamos com modelos padronizados criados pelas irmãs, mas estamos estudando a
+                    possibilidade de incluir iniciais bordadas em coleções futuras.</dd>
+            </dl>
+
+            <div class="contacts-title">Ainda tem dúvidas?</div>
+            <div class="contacts">
+                <p >Contate-nos:</p>
+                <div class="contact-line">
+                    <a href="https://wa.me/33745123456" target="_blank"><i class="bi bi-whatsapp"></i>+33 7 45 12 34
+                        56(Atendimento em horário local de <span lang="fr">Saint-Vallier</span>)</a>
+                    <a href="mailto:contato@margueritesacs.com.fr" target="_blank"><i
+                            class="bi bi-at"></i>contato@margueritesacs.com.fr</a>
+                    <a href="https://maps.app.goo.gl/irj92bfmVomj96eF9" target="_blank"><i
+                            class="bi bi-geo-alt"></i><span lang="fr">Saint-Vallier, Vale do Rhône 12 Rue de l'Abbaye,
+                            França</span></a>
+
+                </div>
+                <p>Siga-nos:</p>
+                <div class="social_media">
+                    <a href="https://www.facebook.com/margueritesacs" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/margueritesacs" target="_blank"><i
+                            class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+            <img src="./Assets/Image/Contact Page Image.png" alt="Sewing bag image" class="contact-image">
+        </div>
+    </section>
+
+    <footer>
+        <p><i class="bi bi-c-circle"></i>2026 Projeto de Estudo - Desenvolvido por <a
+                href="https://linkedin.com/in/helenamignogna/" target="_blank">Helena Mignogna</a></p>
+        <p>"Este é um projeto fictício e acadêmico sem fins comerciais. Nenhuma transação real será realizada."
+        </p>
+    </footer>
+    <script type="module" src="script.js"></script>
 </body>
 
 </html>
